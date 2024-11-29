@@ -1,4 +1,4 @@
-output "url" {
-  default = "example.com"
+output "URL" {
+  value = "example.com"
   
 }
