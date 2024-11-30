@@ -65,3 +65,6 @@ output "map1_aws_trainer" {
 }
 # Declare a empty variable
 variable "trainer_name" {}
+output "trainer_name" {
+  value = var.trainer_name
+}
