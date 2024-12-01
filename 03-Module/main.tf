@@ -9,9 +9,9 @@ variable "instances" {
 
 
 module "ec2" {
-  count          = length(var.instances)
-  source         = "./ec2"
-  iinstance_name = var.instances[count.index]
+  count         = length(var.instances)
+  source        = "./ec2"
+  instance_name = var.instances[count.index]
 
 }
 #module "route53" {
