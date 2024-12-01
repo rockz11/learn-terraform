@@ -22,5 +22,5 @@ module "route53" {
   count  = length(var.instances)
   source = "./reoute53"
   instance_name = var.instanes[count.index]
-  ip_address = module.[count.index].ec2.ip_address
+  ip_address = module..ec2[count.index].ip_address
 }
